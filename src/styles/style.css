@@ -1,0 +1,11 @@
+/* The main css entry. Primarily used to import stuff */
+
+@layer reset, base;
+
+/* Import all css themes */
+@import './reset.css';
+@import './base.css';
+
+.center {
+	text-align: center;
+}
