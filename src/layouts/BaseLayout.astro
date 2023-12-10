@@ -1,5 +1,6 @@
 ---
 import "../styles/style.css"
+import { Header } from "../components/Header"
 
 const { pageTitle } = Astro.props;
 ---
@@ -13,12 +14,16 @@ const { pageTitle } = Astro.props;
   <title>{pageTitle}</title>
 </head>
 <body>
+  <Header />
   <div class="theme-wrapper">
     <main class="page-layout layout zone">
       <h1>{pageTitle}</h1>
       <slot />
     </main>
   </div>
+  <script>
+    import "../scripts/menu.js"
+  </script>
 </body>
 <style>
   .theme-wrapper {
