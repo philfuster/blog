@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "About Me";
+
+const identity = {
+	firstName: "Philip",
+	country: "US",
+	occupation: "Software Developer",
+	hobbies: ["pickleball", "gaming", "reading", "watching basketball"]
+}
+
+const skills = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Astro", "MongoDB", "GraphQL", "Moleculer", "Technical Analysis", "Technical Writing", "Git", "Jira", "Netlify", "Communication"]
+---
+<BaseLayout pageTitle={pageTitle}>
+  <p>Hey, I'm Philip Fuster.</p>
+  <p>I am working on building my portfolio and this website will be the first steps toward doing so.</p>
+  <p>Here are a few facts about me:</p>
+  <ul>
+    <li>I live in the {identity.country} and I work as a {identity.occupation}.</li>
+    {
+      identity.hobbies.length >= 2 && <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}.</li>
+    }
+    <li>I have three pets! One 🐶 and two 😺s.</li>
+  </ul>
+  <p>My skills include:</p>
+  <ul class="skills-container">
+    {skills.map((skill) => <li>{skill}</li>)}
+  </ul>
+  <style>
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+    .skills-container li {
+      margin: 0 0.5rem 0.5rem 0;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      background-color: #77b9e6;
+      list-style-type: none;
+    }
+  </style>
+</BaseLayout>

@@ -7,5 +7,5 @@ I started off by going through the [Astro Tutorial](https://docs.astro.build/en/
 was a great starting point. I followed up by extending the blog with
 [Content Collections](https://docs.astro.build/en/tutorials/add-content-collections/).
 
-I am now ready to go out on my own using what I have learned to build my using the tutorial as a
-reference.
+I am now ready to go out on my own using what I have learned to build my site using the tutorial as
+a reference.
