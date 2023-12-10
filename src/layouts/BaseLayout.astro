@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css"
+import "../styles/style.css"
 
 const { pageTitle } = Astro.props;
 ---
@@ -13,7 +13,20 @@ const { pageTitle } = Astro.props;
   <title>{pageTitle}</title>
 </head>
 <body>
-  <h1>{pageTitle}</h1>
-  <slot />
+  <div class="theme-wrapper">
+    <main class="page-layout layout zone">
+      <h1>{pageTitle}</h1>
+      <slot />
+    </main>
+  </div>
 </body>
+<style>
+  .theme-wrapper {
+    min-height: 100vh;
+  }
+
+  .page-layout {
+    margin: 0 auto;
+  }
+</style>
 </html>
