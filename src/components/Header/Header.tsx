@@ -1,5 +1,4 @@
-import { Navigation } from './components/Navigation';
-import { Hamburger } from './components/Hamburger';
+import { Navigation, Hamburger } from './components';
 import './style.css';
 
 export default function Header() {

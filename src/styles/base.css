@@ -6,7 +6,7 @@
 	html {
 		box-sizing: border-box;
 		-webkit-text-size-adjust: none;
-		background-color: rgb(231, 237, 247);
+		background-color: rgb(236, 239, 255);
 	}
 
 	*,
@@ -109,6 +109,7 @@
 
 	p {
 		line-height: 1.7;
+		font-weight: 500;
 	}
 
 	li {
